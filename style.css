@@ -3,8 +3,12 @@ body{
     margin: 0;
     padding: 0;
 }
+* {
+    box-sizing: border-box;
+}
 
 .main {
+    margin-top: 100px;
     display: flex;
     justify-content: center;
     /* height: 75vh; */
@@ -18,19 +22,81 @@ body{
     border: 2px solid black;
     border-radius: 16px;
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     padding: 20px;
 }
 
 .display{
     background-color: rgb(236,233,233);
-    width: 300px;
+    width: 350px;
     padding: 10px 20px;
-    height: 100px;
+    height: 125px;
     font-size: 50px;
     text-align: right;
     border: 2px solid black;
-    border-radius: 16px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-wrap: nowrap;
     
+}
+
+.clear{
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 4px;
+    width: 172px;
+    font-size: 26px;
+
+}
+
+.delete{
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 4px;
+    width: 172px;
+    margin-bottom: 15px;
+    font-size: 26px;
+    
+
+
+}
+
+.buttons{
+    height: 375px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    
+    
+}
+
+.btn, .btn-op {
+    padding: 20px;
+    width: 80px;
+    height: 75px;
+    border: 2px solid black;
+    border-radius: 4px;
+    font-size: 26px;
+}
+
+.btn:hover, .btn-op:hover, .clear:hover, .delete:hover{
+    background-color: rgb(219, 219, 219);
+}
+.btn:active, .btn-op:active, .clear:active, .delete:active{
+    background-color: rgb(168, 168, 170);
+}
+
+.btn-op.equal {
+    background-color: rgb(126, 182, 247);
+}
+.btn-op.equal:hover{
+    background-color: rgb(109, 168, 236);
+}
+.btn-op.equal:active{
+    background-color: rgb(90, 148, 214);
 }
