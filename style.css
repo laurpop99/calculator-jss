@@ -11,7 +11,6 @@ body{
     margin-top: 100px;
     display: flex;
     justify-content: center;
-    /* height: 75vh; */
     align-items: center;
 }
 .calculator{
@@ -87,6 +86,7 @@ body{
 
 .btn:hover, .btn-op:hover, .clear:hover, .delete:hover{
     background-color: rgb(219, 219, 219);
+    scale: 1.05;
 }
 .btn:active, .btn-op:active, .clear:active, .delete:active{
     background-color: rgb(168, 168, 170);
@@ -100,4 +100,28 @@ body{
 }
 .btn-op.equal:active{
     background-color: rgb(90, 148, 214);
+}
+
+footer {
+margin-top: 200px;
+width: 350px;
+margin: 100px auto;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+footer p{
+    font-size: 24px;
+    font-family: "Roboto", 'Times New Roman', Times, serif;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+footer img{
+    width: 20px;
+    height: 20px;
+}
+footer img:hover{
+    transform: scale(1.1);
 }

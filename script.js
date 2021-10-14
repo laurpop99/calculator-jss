@@ -41,7 +41,7 @@ document.addEventListener("keydown", function(e){
     if(e.key === "-") subtractEvent(); 
     if(e.key === "*") multiplyEvent(); 
     if(e.key === "/") divideEvent();
-    if(e.key === "Enter")  equalEvent();
+    if(e.key === "Enter") equalEvent();
     if(e.key === "Backspace") deleteEvent();
     if(e.key === "Delete" || e.key === "c") clearEvent();
 })
