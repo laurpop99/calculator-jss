@@ -31,8 +31,7 @@ body{
 .display{
     background-color: rgb(236,233,233);
     width: 350px;
-    padding: 10px 20px;
-    height: 125px;
+    padding: 30px 20px;
     font-size: 50px;
     text-align: right;
     border: 2px solid black;
@@ -41,7 +40,9 @@ body{
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    flex-wrap: nowrap;
+    word-wrap: break-word;
+    word-break: break-all;
+
     
 }
 
